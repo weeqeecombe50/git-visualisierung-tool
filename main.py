@@ -13,7 +13,7 @@ class GitVisualizer:
         dates = [datetime.fromtimestamp(commit.committed_datetime.timestamp()) for commit in self.commits]
         plt.figure(figsize=(10, 5))
         plt.plot(dates, range(len(dates)), marker='o')
-        plt.title('Commit-History')  # Fixed the title typo
+        plt.title('Commit History over Time')  # Updated title
         plt.xlabel('Datum')
         plt.ylabel('Commit Nummer')
         plt.xticks(rotation=45)
